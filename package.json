@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/JAER12392/X-Cell-Sum/issues"
   },
-  "homepage": "https://github.com/JAER12392/X-Cell-Sum#readme"
+  "homepage": "https://github.com/JAER12392/X-Cell-Sum#readme",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
 }
