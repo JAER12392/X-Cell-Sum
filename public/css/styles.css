@@ -10,3 +10,11 @@ td {
 	padding: 3px;
 }
 
+
+.current-cell {
+	background-color: pink;
+}
+
+.sum-row {
+	background-color: green;
+}
