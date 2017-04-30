@@ -53,6 +53,10 @@ class TableView {
             this.currentCellLocation.row === row;
     }
 
+    newRow(row) {
+    	return this.currentCellLocation.row === this.model.numRows-1;
+    }
+
     renderTableBody() {
         const fragment = document.createDocumentFragment();
         for (let row = 0; row < this.model.numRows; row++) {

@@ -18,9 +18,20 @@ const getLetterRange = function(firstLetter = 'A', numLetters) {
 		.map(charCode => String.fromCharCode(charCode));
 };
 
+const getSumRange = function(inputs){
+    var product = inputs.reduce(function(acc, val) {
+        return acc * val;
+    }, 1);
+
+    return product;
+
+};
+
+
 module.exports = {
 	getRange: getRange,
-	getLetterRange: getLetterRange
+	getLetterRange: getLetterRange,
+	getSumRange: getSumRange
 };
 },{}],3:[function(require,module,exports){
  const removeChildren = function(parentEl) {
@@ -126,6 +137,10 @@ class TableView {
     isCurrentCell(col, row) {
         return this.currentCellLocation.col === col &&
             this.currentCellLocation.row === row;
+    }
+
+    newRow(row) {
+    	return this.currentCellLocation.row === this.model.numRows-1;
     }
 
     renderTableBody() {
