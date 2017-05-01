@@ -4,7 +4,7 @@
     "description": "World's Smallest Sum Sheet",
     "main": "index.js",
     "scripts": {
-        "start": "node.index.js",
+        "start": "node ./index.js",
         "postinstall": "mkdir -p public/js;browserify client/js/app.js > public/js/bundle.js",
 
         "build": "mkdir -p public/js; browserify client/js/app.js > public/js/bundle.js",
