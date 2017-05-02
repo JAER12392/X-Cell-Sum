@@ -10,18 +10,9 @@ const getLetterRange = function(firstLetter = 'A', numLetters) {
 		.map(charCode => String.fromCharCode(charCode));
 };
 
-const getSumRange = function(inputs){
-    var product = inputs.reduce(function(acc, val) {
-        return acc * val;
-    }, 1);
-
-    return product;
-
-};
-
 
 module.exports = {
 	getRange: getRange,
 	getLetterRange: getLetterRange,
-	getSumRange: getSumRange
+	
 };

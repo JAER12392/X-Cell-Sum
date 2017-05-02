@@ -1,7 +1,6 @@
 const {
     getRange,
-    getLetterRange,
-    getSumRange
+    getLetterRange
 } = require('../array-util');
 
 describe('array-util', () => {
@@ -33,21 +32,7 @@ describe('array-util', () => {
         });
     });
 
-    describe('getSumRange()', () => {
-        it('produces a valid range starting with 0', () => {
-            expect(getLetterRange('Q', 1)).toEqual(['Q']);
-        });
 
-        it('produces a valid range starting with 0', () => {
-            expect(getRange(0, 5)).toEqual([0, 1, 2, 3, 4, 5]);
-        });
-
-        it('produces a valid range starting with 1', () => {
-            expect(getRange(-10, -7)).toEqual([-10, -9, -8, -7]);
-        });
-
-
-    });
 
 
 });

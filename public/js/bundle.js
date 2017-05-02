@@ -18,20 +18,11 @@ const getLetterRange = function(firstLetter = 'A', numLetters) {
 		.map(charCode => String.fromCharCode(charCode));
 };
 
-const getSumRange = function(inputs){
-    var product = inputs.reduce(function(acc, val) {
-        return acc * val;
-    }, 1);
-
-    return product;
-
-};
-
 
 module.exports = {
 	getRange: getRange,
 	getLetterRange: getLetterRange,
-	getSumRange: getSumRange
+	
 };
 },{}],3:[function(require,module,exports){
  const removeChildren = function(parentEl) {
@@ -43,7 +34,9 @@ module.exports = {
  const createEl = function(tagName) {
  	return function(text) {
  		const el = document.createElement(tagName);
- 		if(text) {
+ 		if(text === 0) {
+ 			el.textContent = text;
+ 		} else if (text) {
  			el.textContent = text;
  		}
  		return el;
@@ -171,7 +164,7 @@ class TableView {
             for (let row = 0; row < this.model.numRows; row++) {
                 const position = { col: col, row: row };
                 const value = parseInt(this.model.getValue(position));
-                if (!isNaN(value) || 0) {
+                if (!isNaN(value)) {
                     columnSum += value;
                 }
             }

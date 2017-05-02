@@ -85,7 +85,7 @@ class TableView {
             for (let row = 0; row < this.model.numRows; row++) {
                 const position = { col: col, row: row };
                 const value = parseInt(this.model.getValue(position));
-                if (!isNaN(value) || 0) {
+                if (!isNaN(value)) {
                     columnSum += value;
                 }
             }
