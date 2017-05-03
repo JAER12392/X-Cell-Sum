@@ -116,7 +116,7 @@
              });
 
              describe('table footer', () => {
-                     it('sums of footer row of postive numbers', () => {
+                     it('sums a column of postive numbers', () => {
                              //set the initial state
                              const model = new TableModel(3, 3);
                              const view = new TableView(model);
